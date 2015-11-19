@@ -1,3 +1,21 @@
 <div class="container">
 	<div ng-bind="ndc.test"></div>
+
+	<form class="form">
+		<div class="form-group">
+			<label class="control-label">Vorname</label>
+			<input type="text" ng-model="ndc.arztVorname">
+		</div>
+		<div class="form-group">
+			<label class="control-label">Nachname</label>
+			<input type="text" ng-model="ndc.arztNachname">
+		</div>
+		<div class="form-group">
+			<label class="control-label">Fachbereiche</label>
+			<input type="text" ng-repeat="fachbereich in ndc.arztFachbereich track by $index" ng-model="ndc.arztFachbereich[$index]" placeholder="Fachbereich">
+			<i class="fa fa-plus" ng-click="ndc.addFachbereich()"></i>
+			<i class="fa fa-minus" ng-show="ndc.arztFachbereich.length" ng-click="ndc.removeFachbereich()"></i>
+		</div>
+	</form>
+
 </div>
