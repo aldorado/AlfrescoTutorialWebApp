@@ -1,4 +1,4 @@
-var alfrescoApp = angular.module('alfrescoApp', ['ngRoute']);
+var alfrescoApp = angular.module('alfrescoApp', ['ngRoute', 'docModule','patientModule']);
 
 alfrescoApp.config( function ($routeProvider, $locationProvider) {
 	$routeProvider
@@ -16,7 +16,20 @@ alfrescoApp.config( function ($routeProvider, $locationProvider) {
 			templateUrl : 'pages/patientlist.html',
 			controller : 'patientListCtrl',
 			controllerAs : 'plc'
-		});
+		})
+		.when('/newdoctor', {
+			templateUrl : 'pages/newdoctor.html',
+			controller : 'newDoctorCtrl',
+			controllerAs : 'ndc'
+		})
+		.when('/doctorlist', {
+			templateUrl : 'pages/doctorlist.html',
+			controller : 'doctorListCtrl',
+			controllerAs : 'dlc'
+		})
+		.otherwise({
+                redirectTo: '/'
+        });
 
 		$locationProvider.html5Mode({
 		  enabled: true,
@@ -27,16 +40,4 @@ alfrescoApp.config( function ($routeProvider, $locationProvider) {
 alfrescoApp.controller('mainCtrl', function () {
 	var self = this;
 	self.test = "AlfrescoApp, up and running!";
-});
-
-alfrescoApp.controller('newPatientCtrl', function () {
-	var self = this;
-	self.test = "Neuer Patient!";
-	self.svnr = "0000";
-	self.gebdat = "";
-});
-
-alfrescoApp.controller('patientListCtrl', function () {
-	var self = this;
-	self.test = "Patientenliste";
 });

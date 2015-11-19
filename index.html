@@ -9,6 +9,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
 <script src = "js/alfrescoApp.js"></script>
+<script src="js/docModule.js"></script>
+<script src="js/patientModule.js"></script>
+<script src="js/serviceModule.js"></script>
 
 <body ng-controller="mainCtrl as mc">
 
@@ -20,6 +23,8 @@
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="newdoctor"><i class="fa fa-user-md"></i> Arzt Anlegen</a></li>
+        <li><a href="doctorlist"><i class="fa fa-hospital-o"></i> Aerzte Liste</a></li>
         <li><a href="newpatient"><i class="fa fa-male"></i> Patient Anlegen</a></li>
         <li><a href="patientlist"><i class="fa fa-group"></i> Patienten Liste</a></li>
       </ul>
