@@ -2,29 +2,25 @@ var docModule = angular.module('docModule', []);
 
 docModule.controller('newDoctorCtrl', function () {
 	var self = this;
+	self.arzt = {};
 
-	self.arztVorname = "";
-	self.arztNachname = "",
-	self.arztFachbereich = [""];
+	self.arzt.vorname = "";
+	self.arzt.nachname = "",
+	self.arzt.fachbereich = [""];
 
 	self.addFachbereich = function () {
-		self.arztFachbereich.push('');	
+		self.arzt.fachbereich.push('');	
 	};
 
 	self.removeFachbereich = function () {
-		self.arztFachbereich.pop();
+		self.arzt.fachbereich.pop();
 	};
 
 	self.submitNewDoctor = function () {
 		//Not yet implemented, just testcontent
 
-		newDoctor = {
-			'arztVorname' : self.arztVorname,
-			'arztNachname' : self.arztNachname,
-			'arztFachbereich' : self.arztFachbereich
-		};
-
-		console.log(JSON.stringify(newDoctor));
+		self.output = JSON.stringify(self.arzt);
+		console.log(self.output);
 	};
 
 });

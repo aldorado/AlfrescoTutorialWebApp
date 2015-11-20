@@ -21,7 +21,7 @@ patientModule.controller('patientListCtrl', function () {
 
 	self.patientList = [
 		{
-			"svnr":"1234",
+			"svnr":"0815",
 			"gebdat":"1985-12-13T23:00:00.000Z",
 			"versicherung":"BVA",
 			"geschlecht":"Männlich",
@@ -29,44 +29,48 @@ patientModule.controller('patientListCtrl', function () {
 			"nachname":"Suarez",
 			"strasse":"Beheimgasse 58/10",
 			"ort":"Wien",
-			"blutgruppe":"B",
+			"blutgruppe":"A",
+			"plz":"1170",
 			"rhesusfaktor":"Positiv"
 		},
 		{
 			"svnr":"1234",
 			"gebdat":"1985-12-13T23:00:00.000Z",
-			"versicherung":"BVA",
+			"versicherung":"PVA",
 			"geschlecht":"Männlich",
-			"vorname":"Anuar",
+			"vorname":"Yesid",
 			"nachname":"Suarez",
-			"strasse":"Beheimgasse 58/10",
+			"strasse":"Höhnegasse 20",
 			"ort":"Wien",
 			"blutgruppe":"B",
+			"plz":"1180",
 			"rhesusfaktor":"Positiv"
 		},
 		{
-			"svnr":"1234",
+			"svnr":"4321",
+			"gebdat":"1985-12-13T23:00:00.000Z",
+			"versicherung":"SVA",
+			"geschlecht":"Männlich",
+			"vorname":"Anuar",
+			"nachname":"Rivera",
+			"strasse":"Geigergasse 5",
+			"ort":"Wien",
+			"blutgruppe":"AB",
+			"plz":"1190",
+			"rhesusfaktor":"Positiv"
+		},
+		{
+			"svnr":"1111",
 			"gebdat":"1985-12-13T23:00:00.000Z",
 			"versicherung":"BVA",
 			"geschlecht":"Männlich",
 			"vorname":"Anuar",
 			"nachname":"Suarez",
-			"strasse":"Beheimgasse 58/10",
+			"strasse":"Forsthausgasse 20/9/1",
 			"ort":"Wien",
-			"blutgruppe":"B",
-			"rhesusfaktor":"Positiv"
-		},
-		{
-			"svnr":"1234",
-			"gebdat":"1985-12-13T23:00:00.000Z",
-			"versicherung":"BVA",
-			"geschlecht":"Männlich",
-			"vorname":"Anuar",
-			"nachname":"Suarez",
-			"strasse":"Beheimgasse 58/10",
-			"ort":"Wien",
-			"blutgruppe":"B",
-			"rhesusfaktor":"Positiv"
+			"blutgruppe":"0",
+			"plz":"1200",
+			"rhesusfaktor":"Negativ"
 		}
 	];
 });
